@@ -30,4 +30,6 @@ RUN pip install --no-cache-dir \
     ninja \
     matplotlib
 
+ENV TORCH_CUDA_ARCH_LIST="6.0;7.0;7.5;8.0;8.6"
+
 WORKDIR /workspace
